@@ -61,4 +61,15 @@ console.log(stringsTogether.join( " "))
 //resultaat: "Winc Academy is leuk ;-}"
 
 
+//OPDRACHT G 
+
+firstArray = [1,2,3];
+secondArray = [4,5,6];
+
+console.log(firstArray.concat(secondArray));
+
+// combineArrays([1,2,3], [4,5,6]) 
+  // resultaat: [1,2,3,4,5,6]
+
+
 
