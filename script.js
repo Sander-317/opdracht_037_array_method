@@ -7,6 +7,15 @@ const addTheWordCool = function(array){
 console.log("Add cool:", addTheWordCool(["nice", "awesome", "tof"]));
 // resultaat: ["nice", "awesome", "tof", "cool"]
 
+//OPDRACHT A alternate
+
+const isArray = function(input) {
+    return Array.isArray(input)
+}
+
+console.log(isArray("Winc Winc, nudge nudge")); // false
+console.log(isArray([1, 2, 4, 0])); // true
+
 // OPDRACHT B
 
 const  amountOfElementsInArray = ['appels', 'peren', 'citroenen'];
