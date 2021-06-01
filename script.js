@@ -18,19 +18,41 @@ console.log(isArray([1, 2, 4, 0])); // true
 
 // OPDRACHT B
 
-const  amountOfElementsInArray = ['appels', 'peren', 'citroenen'];
-
-console.log(amountOfElementsInArray.length);
-
-// console.log(amountOfElementsInArray(['appels', 'peren', 'citroenen'])); 
+const  amountOfElementsInArray = function(array){
+    return array.length
+}
+    
+console.log(amountOfElementsInArray(['appels', 'peren', 'citroenen'])); 
 
 //OPDRACHT C 
 
-selectBelgiumFromBenelux = ["Belgie", "Nederland", "Luxemburg"];
+const selectBelgiumFromBenelux = function(array) {
+    return array[0]
+}
+console.log(selectBelgiumFromBenelux(["Belgie", "Nederland", "Luxemburg"]));
+// resultaat: "Belgie"
 
-console.log(selectBelgiumFromBenelux[0]);
+//OPDRACHT C alternate
 
-// resultaat: "Belgie" 
+const selectBelgiumFromBeneluxShift = function(array) {
+    return array.shift()
+}
+
+console.log(selectBelgiumFromBeneluxShift(["Belgie", "Nederland", "Luxemburg"])) 
+
+//OPDRACHT C alternate 2
+
+const selectBelgiumFromBeneluxSlice = function(array) {
+    return array.slice(0, 1)
+}
+console.log(selectBelgiumFromBeneluxSlice(["Belgie", "Nederland", "Luxemburg"]))
+
+//OPDRACHT C alternate 3
+
+const selectBelgiumFromBeneluxSplice = function(array) {
+    return array.splice(0, 1)
+}
+console.log(selectBelgiumFromBeneluxSplice(["Belgie", "Nederland", "Luxemburg"]))
 
 
 // OPDRACHT D
