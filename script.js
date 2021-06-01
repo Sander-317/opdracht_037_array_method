@@ -50,5 +50,15 @@ const impeachTrumpSplice = function(array) {
   console.log(impeachTrumpSplice(presidents)); // ["Obama", "Bush", "Clinton"]
 
 
+//OPDRACHT F
+
+const stringsTogether =['Winc', 'Academy', 'is', 'leuk', ';-}']
+
+console.log(stringsTogether.join( " ")) 
+ 
+
+
+//resultaat: "Winc Academy is leuk ;-}"
+
 
 
