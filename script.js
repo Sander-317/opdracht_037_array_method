@@ -57,10 +57,16 @@ console.log(selectBelgiumFromBeneluxSplice(["Belgie", "Nederland", "Luxemburg"])
 
 // OPDRACHT D
 
-const lastElementInArray = ["Haas", "Cavia", "Kip", "Schildpad"];
+const lastElementInArray = function(array) {
+    return array.pop()
+}
 
-console.log(lastElementInArray[3])
+const lastElementInArray2 = function(array) {
+    return array[array.length - 1]
+}
 
+console.log(lastElementInArray(["Haas", "Cavia", "Kip", "Schildpad"])) 
+console.log(lastElementInArray2(["Haas", "Cavia", "Kip", "Schildpad"])) 
   // resultaat: "Schildpad"
 
   //OPDRACHT E 
@@ -80,17 +86,38 @@ const impeachTrumpSplice = function(array) {
   console.log(impeachTrumpSlice(presidents)); // ["Obama", "Bush", "Clinton"]
   console.log(impeachTrumpSplice(presidents)); // ["Obama", "Bush", "Clinton"]
 
+//OPDRACHT E alternate
+
+const impeachTrumpSlice2 = function(array) {
+    //zoals je hieronder ziet muteert .slice methode niet de bestaande array, maar retourneert een nieuwe die we opslaan in een nieuwe variabele/
+    const newArray = array.slice(1, 4);
+    console.log("Nieuwe array:", newArray, "De onaangetaste array", array);
+    return newArray;
+  };
+  
+  const impeachTrumpSplice2 = function(array) {
+    const removedElement = array.splice(0, 1);
+    console.log(
+      "removed element:",
+      removedElement,
+      "De mutated array, Trump is missing:",
+      array
+    );
+    return array;
+  };
+  
+  console.log(impeachTrumpSlice2(presidents)); // ["Obama", "Bush", "Clinton"]
+  console.log(impeachTrumpSplice2(presidents)); // ["Obama", "Bush", "Clinton"]
+  
 
 //OPDRACHT F
 
-const stringsTogether =['Winc', 'Academy', 'is', 'leuk', ';-}']
-
-console.log(stringsTogether.join( " ")) 
- 
-
-
-//resultaat: "Winc Academy is leuk ;-}"
-
+const stringsTogether = function(array) {
+    return array.join(" ");
+  };
+  
+  console.log(stringsTogether(["Winc", "Academy", "is", "leuk", ";-}"]));
+  //resultaat: "Winc Academy is leuk ;-}"
 
 //OPDRACHT G 
 
