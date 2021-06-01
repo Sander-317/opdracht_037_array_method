@@ -121,13 +121,12 @@ const stringsTogether = function(array) {
 
 //OPDRACHT G 
 
-firstArray = [1,2,3];
-secondArray = [4,5,6];
-
-console.log(firstArray.concat(secondArray));
-
-// combineArrays([1,2,3], [4,5,6]) 
-  // resultaat: [1,2,3,4,5,6]
-
+const combineArrays = function(array1, array2) {
+    return array1.concat(array2);
+  };
+  
+  console.log(combineArrays([1, 2, 3], [4, 5, 6]));
+  console.log(combineArrays(["hoi", "hey", "hallo"], [4, 5, 6]));
+  // result should be [1,2,3,4,5,6]
 
 
